@@ -50,7 +50,7 @@ export function App() {
     event.currentTarget.reset();
   }
 
-  function removeEmailFromInvites(emailToRemove: Strings) {
+  function removeEmailFromInvites(emailToRemove: String) {
     const newEmailList = emailsToInvite.filter(email => email !== emailToRemove);
     
     setEmailsToInvite(newEmailList);
